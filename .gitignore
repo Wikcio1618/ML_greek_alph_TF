@@ -1,6 +1,7 @@
-.ipynb_checkpoints/
-*/.ipynb_checkpoints/*
-__pycache__/
-*/__pycache__/*
-.vscode/
-*/.vscode/*
+.ipynb_checkpoints/*
+__pycache__/*
+.vscode/*
+kaggle/test_high_resolution/*
+kaggle/train_high_resolution/*
+kaggle/train_letters_images/*
+kaggle/test_letters_images/*

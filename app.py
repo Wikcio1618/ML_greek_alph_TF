@@ -27,7 +27,6 @@ class DrawingBoard:
 
 		self.canvas.bind("<B1-Motion>", self.on_mouse_drag)
 		self.canvas.bind("<ButtonRelease-1>", self.on_mouse_release)
-		self.canvas.bind("<ButtonPress-1>", self.on_mouse_press)
 
 		self.prediction_label = tk.Label(self.root, text="Model Prediction: ")
 		self.prediction_label.pack()
@@ -46,11 +45,6 @@ class DrawingBoard:
 		guess = self.model.predict(image)
 		self.prediction_label.config(text=self.alphabet[np.argmax(guess)])
 		self.root.update()
-		
-	def on_mouse_press(self, event):
-		self.canvas.delete("all")
-		self.image = Image.new("L", (200, 200), color=255)
-		self.draw = ImageDraw.Draw(self.image)
 
 	def clear_drawing(self):
 		self.canvas.delete("all")
