@@ -1,5 +1,5 @@
 # ML-cnn-greek_alphabet
-* Data source: [kaggle greek letters]([kaggle greek letters](https://www.kaggle.com/datasets/katianakontolati/classification-of-handwritten-greek-letters))
+* Data source: [kaggle greek letters](https://www.kaggle.com/datasets/katianakontolati/classification-of-handwritten-greek-letters)
 * The aim of this project was to train a nerual network that would classify an image as one of 24 greek alphabet letters.
 * Main problem overcome: Small data set (14 images for each letter/class)
 * How?: Image augmentation
